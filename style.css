@@ -1,0 +1,182 @@
+/* تنظیمات پایه */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg: #faf8f5;
+  --bg-alt: #f0ece5;
+  --text: #2b2b2b;
+  --muted: #6b6b6b;
+  --accent: #8a7a5c;
+  --border: #e0d9cc;
+}
+
+body {
+  font-family: 'Vazirmatn', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.9;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* نوار بالا */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: rgba(250, 248, 245, 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+  z-index: 100;
+}
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.logo {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--text);
+  text-decoration: none;
+}
+.navbar nav a {
+  margin-right: 24px;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+.navbar nav a:hover { color: var(--accent); }
+
+/* بخش معرفی */
+.hero {
+  padding: 120px 0 100px;
+  text-align: center;
+}
+.hero-small {
+  letter-spacing: 3px;
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.hero h1 span { color: var(--accent); }
+.hero-sub {
+  max-width: 600px;
+  margin: 0 auto 32px;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+/* دکمه */
+.btn {
+  display: inline-block;
+  padding: 12px 32px;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+.btn:hover { opacity: 0.85; }
+
+/* بخش‌ها */
+.section { padding: 80px 0; }
+.section-alt { background: var(--bg-alt); }
+.section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+.section-lead {
+  color: var(--accent);
+  margin-bottom: 28px;
+  font-weight: 600;
+}
+.section p { color: var(--muted); max-width: 720px; }
+.center { text-align: center; }
+.center p { margin-left: auto; margin-right: auto; }
+
+/* شبکه نمونه‌کار */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  margin-top: 16px;
+}
+.card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+}
+.card-img {
+  height: 180px;
+  width: 100%;
+}
+.card h3 { font-size: 1.05rem; margin: 16px 16px 4px; }
+.card p { font-size: 0.9rem; margin: 0 16px 16px; }
+
+/* مهارت‌ها */
+.skills {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+}
+.skills li {
+  background: var(--bg-alt);
+  padding: 14px 18px;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+.skills strong { color: var(--text); }
+
+/* تماس */
+.contact-links a {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+.contact-links a:hover { text-decoration: underline; }
+
+/* یادداشت */
+.note {
+  font-size: 0.85rem;
+  color: #999;
+  margin-top: 24px;
+  font-style: italic;
+}
+
+/* فوتر */
+footer {
+  border-top: 1px solid var(--border);
+  padding: 24px 0;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* موبایل */
+@media (max-width: 640px) {
+  .navbar nav a { margin-right: 14px; font-size: 0.85rem; }
+  .hero { padding: 80px 0 60px; }
+  .section { padding: 56px 0; }
+}
