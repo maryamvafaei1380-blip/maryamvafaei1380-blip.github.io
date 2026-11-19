@@ -4,114 +4,168 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>مریم وفایی | معمار و طراح فضا</title>
-  <meta name="description" content="پورتفولیوی مریم وفایی، معمار و طراح داخلی. نمونه‌کارها، رزومه و راه‌های ارتباطی.">
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- فونت فارسی وزیرمتن و فونت انگلیسی برای اعداد -->
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <!-- آیکون‌ها -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-  <!-- نوار بالا -->
-  <header class="navbar">
-    <div class="container nav-inner">
-      <a href="#" class="logo">مریم وفایی</a>
-      <nav>
-        <a href="#about">درباره من</a>
-        <a href="#work">نمونه‌کارها</a>
-        <a href="#skills">مهارت‌ها</a>
-        <a href="#contact">تماس</a>
-      </nav>
+  <!-- منوی شناور سمت راست -->
+  <aside class="sidebar">
+    <div class="profile">
+      <img src="https://via.placeholder.com/100" alt="مریم وفایی" class="profile-img">
+      <h3>مریم وفایی</h3>
+      <p>معمار و طراح فضا</p>
     </div>
-  </header>
+    <nav class="side-nav">
+      <a href="#home" class="active"><i class="fa-solid fa-house"></i> خانه</a>
+      <a href="#services"><i class="fa-solid fa-gear"></i> خدمات</a>
+      <a href="#portfolio"><i class="fa-solid fa-graduation-cap"></i> نمونه‌کار</a>
+      <a href="#resume"><i class="fa-solid fa-briefcase"></i> رزومه</a>
+      <a href="#blog"><i class="fa-solid fa-pen"></i> مقالات</a>
+      <a href="#contact"><i class="fa-solid fa-phone"></i> ارتباط با من</a>
+    </nav>
+  </aside>
 
-  <!-- بخش معرفی -->
-  <section class="hero">
-    <div class="container">
-      <p class="hero-small">HELLO, I'M</p>
-      <h1>سلام، من <span>مریم وفایی</span> هستم.</h1>
-      <p class="hero-sub">معماری و طراحی فضا — خلق فضاهایی که هم زیبا باشند، هم زندگی در آن‌ها حس خوبی داشته باشد.</p>
-      <a href="#work" class="btn">دیدن نمونه‌کارها</a>
-    </div>
-  </section>
-
-  <!-- درباره من -->
-  <section id="about" class="section">
-    <div class="container">
-      <h2>درباره من</h2>
-      <p class="section-lead">معماری، از آدم‌ها شروع می‌شود.</p>
-      <p>
-        برای من، معماری فقط شکل دادن به ساختمان نیست؛ فکر کردن به لحظه‌هایی است که در یک فضا می‌گذرند.
-        به نور، سادگی و جزئیاتی علاقه‌مندم که حال یک فضا را بهتر می‌کنند. این صفحه مجموعه‌ای از تجربه‌ها،
-        ایده‌ها و مسیر حرفه‌ای من است.
-      </p>
-    </div>
-  </section>
-
-  <!-- نمونه‌کارها -->
-  <section id="work" class="section section-alt">
-    <div class="container">
-      <h2>نمونه‌کارها</h2>
-      <p class="section-lead">روایت‌هایی از فضا</p>
-      <div class="grid">
-        <article class="card">
-          <div class="card-img" style="background:#e8e2d8;"></div>
-          <h3>خانهٔ نور</h3>
-          <p>مطالعهٔ نور و فضای زندگی</p>
-        </article>
-        <article class="card">
-          <div class="card-img" style="background:#d8dfe2;"></div>
-          <h3>آرام در میان شهر</h3>
-          <p>رنگ، متریال و آرامش</p>
-        </article>
-        <article class="card">
-          <div class="card-img" style="background:#e2dcd0;"></div>
-          <h3>مکث؛ فرصتی برای دیدن</h3>
-          <p>مرز میان درون و بیرون</p>
-        </article>
-        <article class="card">
-          <div class="card-img" style="background:#dcd6cc;"></div>
-          <h3>لمسِ زمین</h3>
-          <p>گرمای بافت‌های طبیعی</p>
-        </article>
+  <!-- بخش اصلی محتوا -->
+  <main class="main-content">
+    
+    <!-- بخش خانه (Hero) -->
+    <section id="home" class="section hero-section">
+      <div class="hero-text">
+        <h4>سلام، من</h4>
+        <h1>مریم وفایی هستم</h1>
+        <p>دانش‌آموخته و فعال حوزهٔ معماری؛ علاقه‌مند به خلق فضاهایی که هم زیبا باشند، هم زندگی در آن‌ها حس خوبی داشته باشد.</p>
+        <a href="#contact" class="btn">تماس با من</a>
       </div>
-      <p class="note">این پروژه‌ها نمونه هستند؛ با تصاویر و توضیحات واقعی جایگزین شوند.</p>
-    </div>
-  </section>
+      <div class="hero-image">
+        <!-- یک عکس پروفایل یا عکس معماری جایگزین کنید -->
+        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="معماری">
+      </div>
+    </section>
 
-  <!-- مهارت‌ها -->
-  <section id="skills" class="section">
-    <div class="container">
-      <h2>مهارت‌ها و ابزارها</h2>
-      <p class="section-lead">از فکر کردن تا خلق کردن</p>
-      <ul class="skills">
-        <li><strong>AutoCAD</strong> — ترسیم و نقشه‌کشی</li>
-        <li><strong>Revit</strong> — مدل‌سازی اطلاعات</li>
-        <li><strong>SketchUp</strong> — تجسم سه‌بعدی</li>
-        <li><strong>3ds Max</strong> — مدل‌سازی و ارائه</li>
-        <li><strong>Lumion</strong> — رندر و فضاسازی</li>
-        <li><strong>Photoshop</strong> — پرداخت تصویر</li>
-      </ul>
-    </div>
-  </section>
+    <!-- بخش خدمات -->
+    <section id="services" class="section">
+      <div class="section-title">
+        <span>چه می‌کنم</span>
+        <h2>خدمات من</h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="icon-box"><i class="fa-solid fa-pen-ruler"></i></div>
+          <h3>طراحی معماری</h3>
+          <p>کنار هم قرار دادن نیازها، ایده‌ها و زمینه برای رسیدن به یک فضای معنادار.</p>
+        </div>
+        <div class="service-card">
+          <div class="icon-box"><i class="fa-solid fa-couch"></i></div>
+          <h3>طراحی داخلی</h3>
+          <p>جست‌وجوی تعادل میان نور، رنگ و متریال در جزئیات زندگی روزمره.</p>
+        </div>
+        <div class="service-card">
+          <div class="icon-box"><i class="fa-solid fa-cube"></i></div>
+          <h3>ارائه و تجسم ایده</h3>
+          <p>تبدیل ایده‌های اولیه به روایت‌های تصویری و تجربه‌ای قابل درک از فضا.</p>
+        </div>
+      </div>
+    </section>
 
-  <!-- تماس -->
-  <section id="contact" class="section section-alt">
-    <div class="container center">
-      <h2>فضای بعدی را با هم تصور کنیم.</h2>
-      <p class="section-lead">برای آشنایی، همکاری یا صحبت دربارهٔ یک ایدهٔ تازه.</p>
-      <p class="contact-links">
-        <a href="mailto:your-email@example.com">ایمیل</a> ·
-        <a href="https://instagram.com/your-id" target="_blank">اینستاگرام</a> ·
-        <a href="https://linkedin.com/in/your-id" target="_blank">لینکدین</a>
-      </p>
-      <p class="note">این لینک‌ها را با اطلاعات واقعی خود جایگزین کنید.</p>
-    </div>
-  </section>
+    <!-- بخش نمونه کارها -->
+    <section id="portfolio" class="section">
+      <div class="section-title">
+        <span>نمونه کارها</span>
+        <h2>کارهای من</h2>
+      </div>
+      <div class="portfolio-filters">
+        <button class="filter-btn active">همه</button>
+        <button class="filter-btn">معماری</button>
+        <button class="filter-btn">طراحی داخلی</button>
+      </div>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=500&q=80" alt="پروژه ۱">
+          <div class="overlay">
+            <h3>خانهٔ نور</h3>
+            <p>معماری</p>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=500&q=80" alt="پروژه ۲">
+          <div class="overlay">
+            <h3>آرام در میان شهر</h3>
+            <p>طراحی داخلی</p>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=500&q=80" alt="پروژه ۳">
+          <div class="overlay">
+            <h3>مکث</h3>
+            <p>معماری</p>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=500&q=80" alt="پروژه ۴">
+          <div class="overlay">
+            <h3>لمسِ زمین</h3>
+            <p>طراحی داخلی</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <footer>
-    <div class="container">
-      <p>© ۱۴۰۳ مریم وفایی — LIGHT / FORM / LIFE</p>
-    </div>
-  </footer>
+    <!-- بخش رزومه (تایم لاین) -->
+    <section id="resume" class="section bg-light">
+      <div class="section-title">
+        <span>رزومه من</span>
+        <h2>تجربیات و تحصیلات</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">۱۳۹۹ - حال</div>
+          <div class="timeline-content">
+            <h3>طراح ارشد</h3>
+            <h4>شرکت معماری و شهرسازی</h4>
+            <p>همکاری در مورد اجرای ایده‌ها با تیم‌های خلاق و توسعه فضاهای معماری.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">۱۳۹۵ - ۱۳۹۸</div>
+          <div class="timeline-content">
+            <h3>کارشناس طراحی</h3>
+            <h4>دفتر معماری آفرینش</h4>
+            <p>طراحی پلان، مدل‌سازی سه‌بعدی و آماده‌سازی مدارک فنی پروژه‌ها.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- بخش تماس -->
+    <section id="contact" class="section">
+      <div class="section-title">
+        <span>ارتباط با من</span>
+        <h2>در تماس باشید</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <i class="fa-solid fa-mobile-screen"></i>
+          <h4>تلفن</h4>
+          <p>۰۹۱۲ ۱۲۳ ۴۵۶۷</p>
+        </div>
+        <div class="contact-card">
+          <i class="fa-solid fa-envelope"></i>
+          <h4>ایمیل</h4>
+          <p>hello@maryamvafaei.ir</p>
+        </div>
+        <div class="contact-card">
+          <i class="fa-solid fa-location-dot"></i>
+          <h4>آدرس</h4>
+          <p>تهران، ایران</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
 
   <script src="script.js"></script>
 </body>
